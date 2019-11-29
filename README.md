@@ -56,6 +56,7 @@ applications:
 사용할 조직과 스페이스를 생성하고, 타겟을 설정한다. 
 
  준비해둔 manifest.yml 파일과 jar 파일을 이용하여 cf 상에 앱을 push 한다
+ 앱 push 후에 [MicroStudio](http://203.245.1.101:8080/login)를 이용하여 마이크로서비스 구성
 
 ````
 # cf 조직 생성
