@@ -80,8 +80,8 @@ ex) cf push
 
 2차원 좌표 입력 후 변환하면 위경도(3차원)좌표를 확인할 수 있습니다.
 
-![](/home/cro130/startupPlatform/[dev]2nd_sampleApp/startupcloudplatform_github/transform-crs/image/crsResult.png)
+![](./image/crsResult.png)
 
 사용가능한 API 목록
 
-![](/home/cro130/startupPlatform/[dev]2nd_sampleApp/startupcloudplatform_github/transform-crs/image/availableAPIS.png)
+![](./image/availableAPIS.png)
