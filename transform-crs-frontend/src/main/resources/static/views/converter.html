@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>좌표체계 변환기</title>
+
+    <!-- jquery -->
+    <script src="../js/components/jquery-1.11.3.min.js"></script>
+    <script src="../js/components/jquery-ui.js"></script>
+    <script src="../js/components/bootstrap.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../css/components/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/components/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../css/components/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../css/components/notosanskr.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/modal.css">
+    <link rel="stylesheet" type="text/css" href="../css/converter.css">
+</head>
+<body>
+    <!-- header -->
+    <!--<header id="header">-->
+        <!--<div class="inner">-->
+            <!--<div id="logo" class="light-version">-->
+                <!--<h1>전국 공동주택 가격정보 조회 서비스 - 좌표체계 변환기</h1>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</header>-->
+    <div class="wrapper">
+        <div class="content">
+            <div class="con-top">
+                <div class="background">
+                    <div class="background-img">
+                        <div class="background-txt">
+                            <h1>전국 공동주택 가격정보 조회 서비스 </br> 좌표체계 변환기</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-wrap">
+            <div class="box-wrap converter-con">
+                <div class="cont1-header">
+                    <h3>좌표 입력</h3>
+                </div>
+                <pre class="memo-txt">
+<strong>좌표변환기 이용 방법</strong>
+1) 변환하고자 하는 좌표를 '입력 좌표'에 입력하세요.
+2) 출력 좌표 체계를 선택하세요.
+3) '변환' 버튼을 클릭하여 '출력 좌표'에 표시되는 좌표를 확인하세요.
+                </pre>
+
+                <div class="mt-20">
+                    <ul class="layout-inline col2">
+                        <li>
+                            <h5 class="h5-title1">&nbsp;출력 좌표 체계 목록</h5>
+                            <select class="w-60p" ng-model="con.sltCrs">
+                                <option ng-repeat="crs in con.crsList" value="{{crs}}">{{crs}}</option>
+                            </select>
+                        </li>
+                        <li class="mt-15">
+                            <h5 class="h5-title2">&nbsp; 입력 좌표</h5>
+                            <div name="coordForm">
+                                <h6 class="h6-blue">X 좌표</h6>
+                                <input type="text" class="w-60p" id="xCoord" floating-number-only placeholder="X 좌표를 입력하세요." ng-model="con.xCoord">
+                                <div ng-show="!con.isXCoordValid" style="margin:8px; margin-bottom:12px;"> 잘못된 입력입니다!! </div>
+                                <h6 class="h6-blue">Y 좌표</h6>
+                                <input type="text" class="w-60p" id="yCoord" floating-number-only placeholder="Y 좌표를 입력하세요." ng-model="con.yCoord">
+                                <div ng-show="!con.isYCoordValid" style="margin:8px; margin-bottom:12px;"> 잘못된 입력입니다!! </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="w-100p text-center mt-20">
+                    <a ng-click="con.exchange()" class="btn btn-100 btn-blue"><i class="fa-exchange"></i> 변환</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-wrap cont2 mt-20">
+            <div class="cont2-header">
+                <h3>좌표 출력 정보</h3>
+                <a ngclipboard data-clipboard-text="{{con.result}}" class="btn btn-100"><i class="fa-copy"></i> 출력좌표 복사</a>
+            </div>
+            <ul class="layout-inline col2">
+                <li class="mt-15">
+                    <div>
+                        <h6 class="h6-blue">위도</h6>
+                        <input type="text" class="w-60p" disabled placeholder="위도" ng-model="con.latitude" value="con.latitude">
+                        <h6 class="h6-blue">경도</h6>
+                        <input type="text" class="w-60p" disabled placeholder="경도" ng-model="con.longitude" value="con.longitude">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

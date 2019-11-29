@@ -1,0 +1,7 @@
+---
+applications:
+  - name: transform-crs
+    memory: 1G
+    path: target/trsfrm-crs-0.0.1-SNAPSHOT.jar
+    env:
+      msa: yes
