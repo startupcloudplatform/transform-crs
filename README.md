@@ -1,12 +1,12 @@
 ## **목차**
 
-1. ### **MavenBuild**
+### ** 1. MavenBuild**
 
-2. ### **manifest.yml 작성**
+### ** 2. manifest.yml 작성**
 
-3. ### **cf push**
+### ** 3. cf push**
 
-4. ### **최종 결과 화면**
+### ** 4. 최종 결과 화면**
 
    
 
