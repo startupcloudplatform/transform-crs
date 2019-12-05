@@ -74,7 +74,7 @@ cf target -o (조직이름) -s (스페이스이름)
 ex) cf target -o sample-org -s sample-space
 
 # cf에 application 배포
-ex) cf push
+ex) cf push --no-start
 ````
 
 
