@@ -6,7 +6,9 @@
 
   ### [**3. cf push**](https://github.com/startupcloudplatform/transform-crs/blob/master/README.md#cf-push)
 
-  ### [**4. 최종 결과 화면**](https://github.com/startupcloudplatform/transform-crs/blob/master/README.md#%EC%B5%9C%EC%A2%85-%EA%B2%B0%EA%B3%BC%ED%99%94%EB%A9%B4)
+### [4. 마이크로서비스 구성 방법]()
+
+  ### [**5. 최종 결과 화면**](https://github.com/startupcloudplatform/transform-crs/blob/master/README.md#%EC%B5%9C%EC%A2%85-%EA%B2%B0%EA%B3%BC%ED%99%94%EB%A9%B4)
 
    
 
@@ -76,6 +78,20 @@ ex) cf push
 ````
 
 
+
+#### 마이크로서비스 구성방법
+
+######  - 서비스간 연결 구조
+
+![](./image/transformCrsMSA.png)
+
+######   - 라우팅 설정 
+
+​     transform-crs 어플리케이션의 name 변경시 다른 값으로  변경될 수 있음.
+
+​     ( transform-crs 프로젝트의 bootstrap.properties 참고 )
+
+![](./image/routingConfig.png)
 
 #### **최종 결과화면**
 
