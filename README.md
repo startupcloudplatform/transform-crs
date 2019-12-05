@@ -6,7 +6,7 @@
 
   ### [**3. cf push**](https://github.com/startupcloudplatform/transform-crs/blob/master/README.md#cf-push)
 
-### [4. 마이크로서비스 구성 방법]()
+### [4. 마이크로서비스 구성 방법](https://github.com/startupcloudplatform/transform-crs#%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%EC%84%B1%EB%B0%A9%EB%B2%95)
 
   ### [**5. 최종 결과 화면**](https://github.com/startupcloudplatform/transform-crs/blob/master/README.md#%EC%B5%9C%EC%A2%85-%EA%B2%B0%EA%B3%BC%ED%99%94%EB%A9%B4)
 
